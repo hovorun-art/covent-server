@@ -1,0 +1,21 @@
+{
+  "name": "covent-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-access-token": "^1.0.3",
+    "lowdb": "^1.0.0",
+    "node-telegram-bot-api": "^0.40.0"
+  }
+}
