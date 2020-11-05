@@ -282,6 +282,8 @@ app.route('/form').post((req, res) => {
     const properties = db.get('properties').value();
     const passedRules = [];
 
+    console.log(body);
+
 
     for (const rule of rules) {
 
