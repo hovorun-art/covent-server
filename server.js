@@ -273,11 +273,11 @@ app.route('/form').post((req, res) => {
         body
     } = req;
 
-    if (availableOrigins.indexOf(req.headers.origin) === -1) {
-        console.log(req.headers.origin)
-        res.status(403).send('Forbidden');
-        return;
-    }
+    // if (availableOrigins.indexOf(req.headers.origin) === -1) {
+    //     console.log(req.headers.origin)
+    //     res.status(403).send('Forbidden');
+    //     return;
+    // }
 
     const rules = db.get('rules').value();
     const properties = db.get('properties').value();
