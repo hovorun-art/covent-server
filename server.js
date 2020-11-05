@@ -274,6 +274,7 @@ app.route('/form').post((req, res) => {
     } = req;
 
     if (availableOrigins.indexOf(req.headers.origin) === -1) {
+        console.log(req.headers.origin)
         res.status(403).send('Forbidden');
         return;
     }
